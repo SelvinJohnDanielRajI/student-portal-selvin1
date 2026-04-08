@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Student Service Portal</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Student Service Portal</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="login.html">Login</a>
+        <a href="admin.html">Admin</a>
+    </nav>
+    <div class="container">
+        <section>
+            <h2>Admin Login</h2>
+            <p>Access the admin dashboard (User: admin, Pass: admin123).</p>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+            <div id="loginMessage" style="margin-top: 1rem; color: red;"></div>
+        </section>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

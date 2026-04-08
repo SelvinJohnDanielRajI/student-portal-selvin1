@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Student Service Portal</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Student Service Portal</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="login.html">Login</a>
+        <a href="admin.html">Admin</a>
+    </nav>
+    <div class="container">
+        <section id="adminContent">
+            <h2>Admin Dashboard</h2>
+            <p>Welcome, Administrator. Here are the contact form submissions.</p>
+            <table id="submissionsTable">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Message</th>
+                    </tr>
+                </thead>
+                <tbody id="submissionsList">
+                    <!-- Data will be populated here -->
+                </tbody>
+            </table>
+        </section>
+        <section id="accessDenied" style="display: none;">
+            <h2>Access Denied</h2>
+            <p>Please <a href="login.html">login</a> to view this page.</p>
+        </section>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
